@@ -1,0 +1,13 @@
+altair
+pandas
+numpy
+tensorflow
+keras
+streamlit
+seaborn
+sklearn
+matplotlib
+cv2
+os
+cvlib
+skimage
