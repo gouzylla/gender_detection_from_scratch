@@ -7,7 +7,7 @@ streamlit
 seaborn
 sklearn
 matplotlib
-cv2
+opencv-python
 os
 cvlib
 skimage
