@@ -7,6 +7,6 @@ streamlit
 seaborn
 sklearn
 matplotlib
-opencv-python
+opencv-contrib-python-headless
 cvlib
 scikit-image
