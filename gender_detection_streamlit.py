@@ -1,19 +1,16 @@
 
 import cv2
 from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import img_to_array
 from skimage.color import rgb2gray
+import numpy as np
+import cvlib as cv
+import streamlit as st
+
 face_cascade = cv2.CascadeClassifier(cv2.samples.findFile(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'))
 
 model = load_model('E:/Anaconda/Dataset/model_gender.h5')
 
-from tensorflow.keras.preprocessing.image import img_to_array
-from tensorflow.keras.models import load_model
-import numpy as np
-import cv2
-import os
-import cvlib as cv
-
-import streamlit as st
 
 st.title("Webcam Live Feed")
 run = st.checkbox('Run')
