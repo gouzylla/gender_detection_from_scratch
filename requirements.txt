@@ -8,6 +8,5 @@ seaborn
 sklearn
 matplotlib
 opencv-python
-os
 cvlib
 skimage
