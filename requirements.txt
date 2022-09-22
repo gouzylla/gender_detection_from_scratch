@@ -9,4 +9,4 @@ sklearn
 matplotlib
 opencv-python
 cvlib
-skimage
+scikit-image
