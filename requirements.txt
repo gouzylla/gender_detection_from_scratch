@@ -3,7 +3,6 @@ pandas
 numpy
 tensorflow
 keras
-streamlit
 seaborn
 sklearn
 matplotlib
@@ -11,4 +10,5 @@ cvlib
 scikit-image
 streamlit-webrtc
 av
-opencv-python
+opencv_python == 4.2.0.34
+streamlit == 0.59.0
