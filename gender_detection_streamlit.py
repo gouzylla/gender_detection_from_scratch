@@ -61,7 +61,7 @@ class VideoProcessor:
                     0.7, (0, 255, 0), 2)
 
     # display output
-        cv2.imshow("gender detection", frame)
+        #cv2.imshow("gender detection", frame)
 
     # press "Q" to stop
         #if cv2.waitKey(1) & 0xFF == ord('q'):
