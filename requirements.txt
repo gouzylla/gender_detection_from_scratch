@@ -10,3 +10,5 @@ matplotlib
 opencv-contrib-python-headless
 cvlib
 scikit-image
+streamlit-webrtc
+av
