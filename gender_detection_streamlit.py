@@ -19,7 +19,7 @@ camera = cv2.VideoCapture(0)
 
                     
 # load model
-model = load_model('/content/model_gender.h5')
+model = load_model('model_gender.h5')
 
 # open webcam
 webcam = cv2.VideoCapture(0)
