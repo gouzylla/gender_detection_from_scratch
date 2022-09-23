@@ -48,7 +48,7 @@ class VideoProcessor:
             conf = model.predict(face_crop)[0] 
 
         # get label with max accuracy
-            idx = np.argmax(conf)
+            #idx = np.argmax(conf)
         #label = gender_dict[idx]
         #gender_dict[pred[0][0].round()]
 
