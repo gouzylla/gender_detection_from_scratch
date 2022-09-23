@@ -1,6 +1,6 @@
-pip install opencv-python-headless==4.5.3.56 
-pip install opencv-contrib-python==4.5.3.56
-pip install opencv-python==4.5.3.56
+opencv-python-headless==4.5.3.56 
+opencv-contrib-python==4.5.3.56
+opencv-python==4.5.3.56
 streamlit
 altair
 pandas
