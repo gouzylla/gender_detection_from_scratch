@@ -9,7 +9,7 @@ import streamlit as st
 import av
 
 face_cascade = cv2.CascadeClassifier(cv2.samples.findFile(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'))
-model = load_model('E:/Anaconda/Dataset/model_gender.h5')
+model = load_model('model_gender.h5')
 gender_dict = {0 : 'Man', 1 : 'Woman'}
 
 st.title("Gender identification App")
