@@ -1,6 +1,6 @@
-opencv-python-headless==4.5.3.56 
-opencv-contrib-python==4.5.3.56
-opencv-python==4.5.3.56
+opencv-python-headless
+opencv-contrib-python
+opencv-python
 streamlit
 altair
 pandas
