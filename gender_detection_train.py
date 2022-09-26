@@ -23,7 +23,7 @@ img_dims = (96,96,3)
 data = []
 labels = []
 
-# load image files from the dataset
+# load image files from the folder
 image_files = [f for f in glob.glob(r'C:\Users\valentin\Downloads\Gender-Detection-master\gender_dataset_face' + "/**/*", recursive=True) if not os.path.isdir(f)]
 random.shuffle(image_files)
 
@@ -59,7 +59,7 @@ for row in range(4):
         axs[row, col].axis('off')
 
 
-
+#CNN model
 model = Sequential()
 model.add(Conv2D(filters=30, kernel_size=(5, 5), padding='valid', input_shape=input_shape, activation='relu'))
 model.add(MaxPooling2D(pool_size=(3, 3)))
