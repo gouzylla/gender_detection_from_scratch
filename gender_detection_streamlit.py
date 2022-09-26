@@ -45,30 +45,14 @@ class VideoProcessor:
         
         # apply gender detection on face
             face_crop  = rgb2gray(face_crop )
-            conf = model.predict(face_crop)[0] 
-
-        # get label with max accuracy
-            #idx = np.argmax(conf)
-        #label = gender_dict[idx]
-        #gender_dict[pred[0][0].round()]
-
-        #label = "{}: {:.2f}%".format(label, conf[idx] * 100)
-            label = gender_dict[conf[0].round()]
+            pred = model.predict(face_crop)[0] 
+            label = gender_dict[pred[0].round()]
         
             Y = startY - 10 if startY - 10 > 10 else startY + 10
-        # write label and confidence above face rectangle
+            
+        # write label above face rectangle
             cv2.putText(frame, label, (startX, Y),  cv2.FONT_HERSHEY_SIMPLEX,
                     0.7, (0, 255, 0), 2)
-
-    # display output
-        #cv2.imshow("gender detection", frame)
-
-    # press "Q" to stop
-        #if cv2.waitKey(1) & 0xFF == ord('q'):
-        #    break
-        
-        #for x,y,w,h in faces:
-        #    cv2.rectangle(frm, (x,y), (x+w, y+h), (0,255,0), 3)
 
         return av.VideoFrame.from_ndarray(frame, format='bgr24')
 
