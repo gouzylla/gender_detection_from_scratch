@@ -3,7 +3,7 @@ streamlit
 altair
 pandas
 numpy
-tensorflow-cpu
+tensorflow-cpu==2.4.0
 keras
 seaborn
 sklearn
