@@ -3,7 +3,7 @@ streamlit
 altair
 pandas
 numpy
-tensorflow
+tensorflow-cpu
 keras
 seaborn
 sklearn
